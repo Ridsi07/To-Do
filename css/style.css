@@ -1,0 +1,12 @@
+.note-done{
+  text-decoration: line-through;
+}
+
+.note-pending{
+  
+}
+
+.selected{
+  background-color: blue;
+  color: #fff;
+}
