@@ -46,6 +46,7 @@ input[type=text]
 	border-radius: 500px;
 	border: none;
 	margin-left:30px;
+	cursor:pointer;
 
 	
 	
@@ -74,14 +75,18 @@ ul li
 	box-shadow: 1px 1px 1px 1px #888888;
 	width: 90%;
 	border-radius: 15px;
+	cursor:pointer;
 	
 	
 
 }
+
 input[type=checkbox]
 {
 	width:25px;
 	height:25px;
+	cursor:pointer;
+
 }
 
 li > button
@@ -91,6 +96,7 @@ li > button
 	color: white;
 	border-radius: 100%;
 	border: none;
+	cursor:pointer;
 	
 }
 #filterList
@@ -107,6 +113,7 @@ li > button
 	color: #668cff;
 	border: 1px solid #668cff;
 	border-radius: 500px;
+	cursor:pointer;
 
 
 }
