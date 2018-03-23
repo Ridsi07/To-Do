@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  
+}
+body
+{
+	width: 60%;
+	margin: auto;
+	margin-top: 100px;
+	border: 1px solid gray;
+	padding-bottom: 50px;
+	box-shadow: 5px 5px 5px 5px #888888;
+	margin-bottom: 100px;
+	
+}
+.header
+{
+	
+	display: flex;
+	width: 90%;
+	margin: auto;
+	
+}
+input[type=text]
+{
+	width: 75%;
+	float: left;
+	padding: 10px;
+	box-shadow: 1px 1px 1px 1px #888888;
+	border: none;
+	
+	
+}
+#saveButton
+{
+	width: 20%;
+	padding: 10px;
+	background-color: #3955ff;
+	color: white;
+	border-radius: 500px;
+	border: none;
+	margin-left:30px;
+
+	
+	
+}
+
+h1
+{
+	text-align: center;
+}
+ul
+{
+	list-style: none;
+
+}
+ul li
+{
+	background-color: white;
+	padding: 10px;
+	position: relative;
+	font-size: 25px;
+	text-align: center;
+	display: flex;
+	color: black;
+	margin: 20px auto;
+	box-shadow: 1px 1px 1px 1px #888888;
+	width: 90%;
+	
+	
+
+}
+input[type=checkbox]
+{
+	width:25px;
+	height:25px;
+}
+
+li > button
+{
+	width:4%;
+	background-color: #3955ff;
+	color: white;
+	border-radius: 100%;
+	border: none;
+}
+#filterList
+{
+	display:flex;
+	padding: 35px;
+}
+
+#filterList > button
+{
+	margin: 10px;
+	padding: 5px;
+	background-color: white;
+	color: #3955ff;
+	border: 1px solid #3955ff;
+
+
+}
+
+
+.selected
+{
+  background-color: #3955ff !important;
+  color: white !important;
+  border: none !important;
+}
+
+
+
+.note-done{
+  text-decoration: line-through;
+}
+
