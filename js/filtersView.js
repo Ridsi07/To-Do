@@ -1,8 +1,8 @@
 function getFilterButton(filterId, label, className) {
   return (
-    '<button class="' + className + '" data-id="' + filterId + '">' +
+    '<li class="filter ' + className + '" data-id="' + filterId + '">' +
     label +
-    "</button>"
+    "</li>"
   );
 }
 
@@ -16,7 +16,7 @@ var filterView = {
   handleFilterListClick(e) {
     var filterId = e.target.dataset.id;
 
-    if (e.target.tagName === 'BUTTON') {
+    if (e.target.tagName === 'LI') {
       controller.changeFilterView(filterId);
     }
   },

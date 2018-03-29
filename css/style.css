@@ -1,134 +1,109 @@
 * {
-  box-sizing: border-box;
-  width: 100%;
-  padding-left: 0;
-  margin-left: 0;
-  
-}
-body
-{
-	width: 60%;
-	margin: auto;
-	margin-top: 100px;
-	border: 1px solid gray;
-	padding-bottom: 50px;
-	box-shadow: 5px 5px 5px 5px #888888;
-	margin-bottom: 100px;
-	
+    box-sizing: border-box;
 }
 
-
-.header
-{
-	
-	display: flex;
-	width: 90%;
-	margin: auto;
-	
-}
-input[type=text]
-{
-	width: 75%;
-	float: left;
-	padding: 10px;
-	box-shadow: 1px 1px 1px 1px #888888;
-	border: none;
-	border-radius: 10px;
-	
-	
-}
-#saveButton
-{
-	width: 20%;
-	padding: 10px;
-	background-color: #668cff;
-	color: white;
-	border-radius: 500px;
-	border: none;
-	margin-left:30px;
-	cursor:pointer;
-
-	
-	
+body {
+    width: 60%;
+    margin: 100px auto;
+    border: 1px solid #d3d3d3;
+    padding-bottom: 50px;
+    box-shadow: 10px 10px 47px -15px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
 }
 
-h1
-{
-	text-align: center;
-	font-family: "Arial",Verdana, Sans-serif;
-}
-ul
-{
-	list-style: none;
-
-}
-ul li
-{
-	background-color: white;
-	padding: 10px;
-	position: relative;
-	font-size: 25px;
-	text-align: center;
-	display: flex;
-	color: black;
-	margin: 20px auto;
-	box-shadow: 1px 1px 1px 1px #888888;
-	width: 90%;
-	border-radius: 15px;
-	cursor:pointer;
-	
-	
-
+.notes-container {
+    margin: 0 16px;
 }
 
-input[type=checkbox]
-{
-	width:25px;
-	height:25px;
-	cursor:pointer;
-
+.header {
+    display: flex;
 }
 
-li > button
-{
-	width:4%;
-	background-color: #668cff;
-	color: white;
-	border-radius: 100%;
-	border: none;
-	cursor:pointer;
-	
-}
-#filterList
-{
-	display:flex;
-	padding: 35px;
+#list {
+    border-top: 1px solid #ededed;
 }
 
-#filterList > button
-{
-	margin: 10px;
-	padding: 5px;
-	background-color: white;
-	color: #668cff;
-	border: 1px solid #668cff;
-	border-radius: 500px;
-	cursor:pointer;
-
-
+#notesInput {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    flex: 1;
 }
 
-
-.selected
-{
-  background-color: #668cff !important;
-  color: white !important;
-  border: none !important;
+#saveButton {
+    padding: 10px;
+    background-color: #668cff;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 12px;
+    min-width: 120px;
 }
 
-
-
-.note-done{
-  text-decoration: line-through;
+h1 {
+    text-align: center;
+    font-family: "Arial", Verdana, Sans-serif;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.note {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    padding: 12px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    border-bottom: 1px solid #ededed;
+    align-items: center;
+}
+
+.note,
+.note-content {
+    flex: 1;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #668cff;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+}
+
+#filterList {
+    display: flex;
+    justify-content: center;
+}
+
+.filter {
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    color: #668cff;
+    border: 1px solid #668cff;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+}
+
+.selected {
+    background-color: #668cff;
+    color: #fff;
+}
+
+.note-done {
+    text-decoration: line-through;
+}

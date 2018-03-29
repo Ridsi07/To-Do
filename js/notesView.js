@@ -1,23 +1,23 @@
-var deleteButtonStr = '<button class="delete">X</button>';
+var deleteButtonStr = '<button class="delete-btn">x</button>';
 
 function getContent(note) {
   return (
-    '<span class="' +
+    '<label class="note-content ' +
     (note.isDone ? "note-done" : "note-pending") +
     '">' +
     note.content +
-    "</span>"
+    "</label>"
   );
 }
 
 function getCheckbox(note) {
-  return '<input type="checkbox" ' + (note.isDone ? 'checked' : '!checked') + '>';
+  return '<input type="checkbox" ' + (note.isDone ? 'checked' : '') + '>';
 }
 
 var notesView = {
   init() {
     this.buttonEl = document.getElementById('saveButton');
-    this.inputEl = document.getElementById('in');
+    this.inputEl = document.getElementById('notesInput');
     this.listEl = document.getElementById('list');
 
     this.buttonEl.addEventListener('click', this.handleButtonClick.bind(this));
@@ -47,7 +47,7 @@ var notesView = {
    
     if (targetEl.tagName === 'BUTTON') {
       controller.deleteNote(+ancestorEl.dataset.id);
-    } else if (targetEl.tagName === 'SPAN') {
+    } else if (targetEl.tagName === 'LABEL') {
       controller.toggleNoteStatus(+ancestorEl.dataset.id);
     } else if (targetEl.tagName === 'INPUT') {
       controller.toggleNoteStatus(+ancestorEl.dataset.id);
